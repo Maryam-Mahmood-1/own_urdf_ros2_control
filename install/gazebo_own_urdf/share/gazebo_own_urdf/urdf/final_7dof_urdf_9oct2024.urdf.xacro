@@ -958,7 +958,7 @@
 
   <gazebo>
     <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
-      <parameters>$(find gazebo_own_urdf)/config/joint_controller.yaml</parameters>
+      <parameters>$(find own_urdf_control)/config/joint_controller.yaml</parameters>
     </plugin>
   </gazebo>
 

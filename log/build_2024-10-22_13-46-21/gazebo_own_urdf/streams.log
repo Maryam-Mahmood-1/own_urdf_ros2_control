@@ -1,0 +1,93 @@
+[0.011s] Invoking command in '/home/maryammahmood/own_urdf_control/build/gazebo_own_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maryammahmood/ws_moveit2/install/moveit_configs_utils:/home/maryammahmood/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /home/maryammahmood/own_urdf_control/gazebo_own_urdf -DCMAKE_INSTALL_PREFIX=/home/maryammahmood/own_urdf_control/install/gazebo_own_urdf
+[0.068s] -- The C compiler identification is GNU 11.4.0
+[0.123s] -- The CXX compiler identification is GNU 11.4.0
+[0.129s] -- Detecting C compiler ABI info
+[0.216s] -- Detecting C compiler ABI info - done
+[0.227s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.227s] -- Detecting C compile features
+[0.228s] -- Detecting C compile features - done
+[0.231s] -- Detecting CXX compiler ABI info
+[0.305s] -- Detecting CXX compiler ABI info - done
+[0.311s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.311s] -- Detecting CXX compile features
+[0.311s] -- Detecting CXX compile features - done
+[0.316s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.475s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.582s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.644s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.654s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.665s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.681s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.702s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.763s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.769s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.889s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.926s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.970s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.992s] -- Looking for pthread.h
+[1.096s] -- Looking for pthread.h - found
+[1.097s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.180s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.181s] -- Found Threads: TRUE  
+[1.231s] -- Found trajectory_msgs: 4.2.4 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[1.259s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.349s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.349s] -- Configured cppcheck include dirs: 
+[1.349s] -- Configured cppcheck exclude dirs and/or files: 
+[1.349s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.350s] -- Added test 'lint_cmake' to check CMake code style
+[1.351s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.352s] -- Added test 'uncrustify' to check C / C++ code style
+[1.352s] -- Configured uncrustify additional arguments: 
+[1.353s] -- Added test 'xmllint' to check XML markup files
+[1.355s] -- Configuring done
+[1.360s] -- Generating done
+[1.361s] -- Build files have been written to: /home/maryammahmood/own_urdf_control/build/gazebo_own_urdf
+[1.367s] Invoked command in '/home/maryammahmood/own_urdf_control/build/gazebo_own_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maryammahmood/ws_moveit2/install/moveit_configs_utils:/home/maryammahmood/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /home/maryammahmood/own_urdf_control/gazebo_own_urdf -DCMAKE_INSTALL_PREFIX=/home/maryammahmood/own_urdf_control/install/gazebo_own_urdf
+[1.368s] Invoking command in '/home/maryammahmood/own_urdf_control/build/gazebo_own_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maryammahmood/ws_moveit2/install/moveit_configs_utils:/home/maryammahmood/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/maryammahmood/own_urdf_control/build/gazebo_own_urdf -- -j24 -l24
+[1.428s] [ 50%] [32mBuilding CXX object CMakeFiles/joint_publisher.dir/src/joint_publisher.cpp.o[0m
+[3.970s] [100%] [32m[1mLinking CXX executable joint_publisher[0m
+[4.107s] [100%] Built target joint_publisher
+[4.119s] Invoked command in '/home/maryammahmood/own_urdf_control/build/gazebo_own_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maryammahmood/ws_moveit2/install/moveit_configs_utils:/home/maryammahmood/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/maryammahmood/own_urdf_control/build/gazebo_own_urdf -- -j24 -l24
+[4.170s] Invoking command in '/home/maryammahmood/own_urdf_control/build/gazebo_own_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maryammahmood/ws_moveit2/install/moveit_configs_utils:/home/maryammahmood/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/maryammahmood/own_urdf_control/build/gazebo_own_urdf
+[4.178s] -- Install configuration: ""
+[4.178s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/lib/gazebo_own_urdf/joint_publisher
+[4.178s] -- Set runtime path of "/home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/lib/gazebo_own_urdf/joint_publisher" to ""
+[4.179s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/launch
+[4.179s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/launch/gazebo.launch.py
+[4.179s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/urdf
+[4.179s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/urdf/final_7dof_urdf_9oct2024.urdf.xacro
+[4.179s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/config
+[4.179s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/config/joint_controller.yaml
+[4.179s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/meshes
+[4.179s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/meshes/Link_4.STL
+[4.179s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/meshes/base_link.STL
+[4.181s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/meshes/base_claw_link2.STL
+[4.181s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/meshes/Link_7.STL
+[4.181s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/meshes/base_claw_link1.STL
+[4.181s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/meshes/Link_5.STL
+[4.181s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/meshes/Link_1.STL
+[4.182s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/meshes/endeffector.STL
+[4.182s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/meshes/gear2_link.STL
+[4.183s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/meshes/gear2_claw.STL
+[4.183s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/meshes/gear1.STL
+[4.183s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/meshes/Link_3.STL
+[4.184s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/meshes/link_6.STL
+[4.184s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/meshes/gear1_claw.STL
+[4.184s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/meshes/Link_2.STL
+[4.186s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/ament_index/resource_index/package_run_dependencies/gazebo_own_urdf
+[4.186s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/ament_index/resource_index/parent_prefix_path/gazebo_own_urdf
+[4.186s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/environment/ament_prefix_path.sh
+[4.186s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/environment/ament_prefix_path.dsv
+[4.186s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/environment/path.sh
+[4.186s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/environment/path.dsv
+[4.186s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/local_setup.bash
+[4.186s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/local_setup.sh
+[4.186s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/local_setup.zsh
+[4.187s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/local_setup.dsv
+[4.187s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/package.dsv
+[4.187s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/ament_index/resource_index/packages/gazebo_own_urdf
+[4.187s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/cmake/gazebo_own_urdfConfig.cmake
+[4.187s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/cmake/gazebo_own_urdfConfig-version.cmake
+[4.187s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_own_urdf/share/gazebo_own_urdf/package.xml
+[4.188s] Invoked command in '/home/maryammahmood/own_urdf_control/build/gazebo_own_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maryammahmood/ws_moveit2/install/moveit_configs_utils:/home/maryammahmood/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/maryammahmood/own_urdf_control/build/gazebo_own_urdf
