@@ -21,7 +21,7 @@ def generate_launch_description():
     robot_description = Command([
         FindExecutable(name='xacro'), ' ',
         PathJoinSubstitution([
-            FindPackageShare('own_urdf_control'), 'urdf', 'final_7dof_urdf_9oct2024.urdf.xacro'
+            FindPackageShare('gazebo_own_urdf'), 'urdf', 'final_7dof_urdf_9oct2024.urdf.xacro'
         ])
     ])
 
