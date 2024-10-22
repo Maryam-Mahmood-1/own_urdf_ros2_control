@@ -6,9 +6,7 @@ from launch.actions import ExecuteProcess, IncludeLaunchDescription
 from launch_ros.substitutions import FindPackageShare
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import PathJoinSubstitution
-from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription
-
+from launch_ros.descriptions import ParameterValue  # Import this
 
 def generate_launch_description():
 
@@ -28,7 +26,10 @@ def generate_launch_description():
     robot_state_publisher_node = Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
-        parameters=[{'robot_description': robot_description}],
+        # Wrap robot_description with ParameterValue, and set value_type=str
+        parameters=[{
+            'robot_description': ParameterValue(robot_description, value_type=str)
+        }],
         output='screen'
     )
 
