@@ -35,7 +35,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/base_link.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
@@ -49,7 +49,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/base_link.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -75,7 +75,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/Link_1.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/Link_1.STL" />
       </geometry>
       <material
         name="">
@@ -89,7 +89,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/Link_1.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/Link_1.STL" />
       </geometry>
     </collision>
   </link>
@@ -133,7 +133,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/Link_2.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/Link_2.STL" />
       </geometry>
       <material
         name="">
@@ -147,7 +147,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/Link_2.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/Link_2.STL" />
       </geometry>
     </collision>
   </link>
@@ -191,7 +191,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/Link_3.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/Link_3.STL" />
       </geometry>
       <material
         name="">
@@ -205,7 +205,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/Link_3.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/Link_3.STL" />
       </geometry>
     </collision>
   </link>
@@ -249,7 +249,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/Link_4.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/Link_4.STL" />
       </geometry>
       <material
         name="">
@@ -263,7 +263,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/Link_4.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/Link_4.STL" />
       </geometry>
     </collision>
   </link>
@@ -307,7 +307,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/Link_5.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/Link_5.STL" />
       </geometry>
       <material
         name="">
@@ -321,7 +321,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/Link_5.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/Link_5.STL" />
       </geometry>
     </collision>
   </link>
@@ -365,7 +365,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/link_6.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/link_6.STL" />
       </geometry>
       <material
         name="">
@@ -379,7 +379,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/link_6.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/link_6.STL" />
       </geometry>
     </collision>
   </link>
@@ -423,7 +423,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/Link_7.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/Link_7.STL" />
       </geometry>
       <material
         name="">
@@ -437,7 +437,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/Link_7.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/Link_7.STL" />
       </geometry>
     </collision>
   </link>
@@ -481,7 +481,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/endeffector.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/endeffector.STL" />
       </geometry>
       <material
         name="">
@@ -495,7 +495,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/endeffector.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/endeffector.STL" />
       </geometry>
     </collision>
   </link>
@@ -534,7 +534,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/gear1.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/gear1.STL" />
       </geometry>
       <material
         name="">
@@ -548,7 +548,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/gear1.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/gear1.STL" />
       </geometry>
     </collision>
   </link>
@@ -592,7 +592,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/gear1_claw.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/gear1_claw.STL" />
       </geometry>
       <material
         name="">
@@ -606,7 +606,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/gear1_claw.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/gear1_claw.STL" />
       </geometry>
     </collision>
   </link>
@@ -654,7 +654,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/gear2_link.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/gear2_link.STL" />
       </geometry>
       <material
         name="">
@@ -668,7 +668,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/gear2_link.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/gear2_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -716,7 +716,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/gear2_claw.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/gear2_claw.STL" />
       </geometry>
       <material
         name="">
@@ -730,7 +730,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/gear2_claw.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/gear2_claw.STL" />
       </geometry>
     </collision>
   </link>
@@ -778,7 +778,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/base_claw_link2.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/base_claw_link2.STL" />
       </geometry>
       <material
         name="">
@@ -792,7 +792,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/base_claw_link2.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/base_claw_link2.STL" />
       </geometry>
     </collision>
   </link>
@@ -840,7 +840,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/base_claw_link1.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/base_claw_link1.STL" />
       </geometry>
       <material
         name="">
@@ -854,7 +854,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://final_7dof_urdf_9oct2024/meshes/base_claw_link1.STL" />
+          filename="$(find gazebo_own_urdf)/meshes/base_claw_link1.STL" />
       </geometry>
     </collision>
   </link>
