@@ -1,0 +1,93 @@
+[0.010s] Invoking command in '/home/maryammahmood/own_urdf_control/build/gazebo_2_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maryammahmood/ws_moveit2/install/moveit_configs_utils:/home/maryammahmood/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /home/maryammahmood/own_urdf_control/gazebo_2_sim -DCMAKE_INSTALL_PREFIX=/home/maryammahmood/own_urdf_control/install/gazebo_2_sim
+[0.076s] -- The C compiler identification is GNU 11.4.0
+[0.143s] -- The CXX compiler identification is GNU 11.4.0
+[0.149s] -- Detecting C compiler ABI info
+[0.226s] -- Detecting C compiler ABI info - done
+[0.235s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.235s] -- Detecting C compile features
+[0.236s] -- Detecting C compile features - done
+[0.238s] -- Detecting CXX compiler ABI info
+[0.315s] -- Detecting CXX compiler ABI info - done
+[0.320s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.320s] -- Detecting CXX compile features
+[0.321s] -- Detecting CXX compile features - done
+[0.325s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.477s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.575s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.631s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.639s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.650s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.664s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.684s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.740s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.746s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.870s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.901s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.943s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.955s] -- Looking for pthread.h
+[1.028s] -- Looking for pthread.h - found
+[1.028s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.100s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.101s] -- Found Threads: TRUE  
+[1.146s] -- Found trajectory_msgs: 4.2.4 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[1.174s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.250s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.250s] -- Configured cppcheck include dirs: 
+[1.250s] -- Configured cppcheck exclude dirs and/or files: 
+[1.251s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.251s] -- Added test 'lint_cmake' to check CMake code style
+[1.252s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.253s] -- Added test 'uncrustify' to check C / C++ code style
+[1.253s] -- Configured uncrustify additional arguments: 
+[1.254s] -- Added test 'xmllint' to check XML markup files
+[1.256s] -- Configuring done
+[1.261s] -- Generating done
+[1.262s] -- Build files have been written to: /home/maryammahmood/own_urdf_control/build/gazebo_2_sim
+[1.270s] Invoked command in '/home/maryammahmood/own_urdf_control/build/gazebo_2_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maryammahmood/ws_moveit2/install/moveit_configs_utils:/home/maryammahmood/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /home/maryammahmood/own_urdf_control/gazebo_2_sim -DCMAKE_INSTALL_PREFIX=/home/maryammahmood/own_urdf_control/install/gazebo_2_sim
+[1.271s] Invoking command in '/home/maryammahmood/own_urdf_control/build/gazebo_2_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maryammahmood/ws_moveit2/install/moveit_configs_utils:/home/maryammahmood/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/maryammahmood/own_urdf_control/build/gazebo_2_sim -- -j24 -l24
+[1.325s] [ 50%] [32mBuilding CXX object CMakeFiles/joint_publisher.dir/src/joint_publisher.cpp.o[0m
+[3.875s] [100%] [32m[1mLinking CXX executable joint_publisher[0m
+[4.014s] [100%] Built target joint_publisher
+[4.025s] Invoked command in '/home/maryammahmood/own_urdf_control/build/gazebo_2_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maryammahmood/ws_moveit2/install/moveit_configs_utils:/home/maryammahmood/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/maryammahmood/own_urdf_control/build/gazebo_2_sim -- -j24 -l24
+[4.071s] Invoking command in '/home/maryammahmood/own_urdf_control/build/gazebo_2_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maryammahmood/ws_moveit2/install/moveit_configs_utils:/home/maryammahmood/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/maryammahmood/own_urdf_control/build/gazebo_2_sim
+[4.078s] -- Install configuration: ""
+[4.078s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/lib/gazebo_2_sim/joint_publisher
+[4.078s] -- Set runtime path of "/home/maryammahmood/own_urdf_control/install/gazebo_2_sim/lib/gazebo_2_sim/joint_publisher" to ""
+[4.078s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/launch
+[4.078s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/launch/gazebo.launch.py
+[4.078s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/urdf
+[4.079s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/urdf/link2_urdf.urdf.xacro
+[4.079s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/config
+[4.079s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/config/joint_controller.yaml
+[4.079s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes
+[4.079s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/Link_4.STL
+[4.079s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/base_link.STL
+[4.081s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/base_claw_link2.STL
+[4.081s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/Link_7.STL
+[4.081s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/base_claw_link1.STL
+[4.081s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/Link_5.STL
+[4.081s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/Link_1.STL
+[4.082s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/endeffector.STL
+[4.082s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/gear2_link.STL
+[4.082s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/gear2_claw.STL
+[4.083s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/gear1.STL
+[4.083s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/Link_3.STL
+[4.084s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/link_6.STL
+[4.084s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/gear1_claw.STL
+[4.084s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/Link_2.STL
+[4.086s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/ament_index/resource_index/package_run_dependencies/gazebo_2_sim
+[4.086s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/ament_index/resource_index/parent_prefix_path/gazebo_2_sim
+[4.086s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/environment/ament_prefix_path.sh
+[4.086s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/environment/ament_prefix_path.dsv
+[4.086s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/environment/path.sh
+[4.086s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/environment/path.dsv
+[4.086s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/local_setup.bash
+[4.086s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/local_setup.sh
+[4.086s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/local_setup.zsh
+[4.086s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/local_setup.dsv
+[4.086s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/package.dsv
+[4.086s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/ament_index/resource_index/packages/gazebo_2_sim
+[4.086s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/cmake/gazebo_2_simConfig.cmake
+[4.086s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/cmake/gazebo_2_simConfig-version.cmake
+[4.086s] -- Installing: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/package.xml
+[4.088s] Invoked command in '/home/maryammahmood/own_urdf_control/build/gazebo_2_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maryammahmood/ws_moveit2/install/moveit_configs_utils:/home/maryammahmood/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/maryammahmood/own_urdf_control/build/gazebo_2_sim

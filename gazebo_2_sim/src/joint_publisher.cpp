@@ -4,6 +4,7 @@
 #include <cmath>
 #include <chrono>
 #include <vector>
+#include <random>
 
 class JointPublisher : public rclcpp::Node
 {
@@ -13,63 +14,57 @@ public:
     {
         publisher_ = this->create_publisher<trajectory_msgs::msg::JointTrajectory>(
             "/joint_trajectory_controller/joint_trajectory", 10);
-        
-        // Initialize all joint positions to 0.0
-        current_positions_ = std::vector<double>(7, 0.0);
 
+        // Initialize joint names and positions
+        joint_names_ = {"joint_1", "joint_2"};  // Define the names of the joints
+        current_positions_ = std::vector<double>(joint_names_.size(), 0.0);
+
+        // Set a timer to update the joint position every 2 seconds
         timer_ = this->create_wall_timer(
-            std::chrono::milliseconds(3000), std::bind(&JointPublisher::timer_callback, this)); 
+            std::chrono::milliseconds(2000), std::bind(&JointPublisher::timer_callback, this)); 
+
+        // Seed the random number generator
+        rng_ = std::default_random_engine(std::chrono::system_clock::now().time_since_epoch().count());
+        // Define the range for random positions (e.g., -1.0 to 1.0 radians)
+        distribution_ = std::uniform_real_distribution<double>(-1.0, 1.0);
     }
 
 private:
     void timer_callback()
     {
         auto message = trajectory_msgs::msg::JointTrajectory();
-
-        // Add names of the 7 joints
-        message.joint_names.push_back("joint_1");
-        message.joint_names.push_back("joint_2");
-        message.joint_names.push_back("joint_3");
-        message.joint_names.push_back("joint_4");
-        message.joint_names.push_back("joint_5");
-        message.joint_names.push_back("joint_6");
-        message.joint_names.push_back("joint_7");
+        message.joint_names = joint_names_;  // Set the joint names in the message
 
         auto point = trajectory_msgs::msg::JointTrajectoryPoint();
+        
+        // Generate random positions for both joints
+        for (size_t i = 0; i < joint_names_.size(); ++i) {
+            // Generate a new random position
+            double new_position = distribution_(rng_);
+            current_positions_[i] = new_position;  // Update the position for the current joint
 
-        // Update only the selected joint with its cosine movement, keep others unchanged
-        for (size_t i = 0; i < 7; ++i) {
-            if (i == joint_index_) {
-                // Calculate the position for the current joint
-                double new_position = 0.66 * (1 - cos(count_ * 0.2 + i * M_PI / 7));
-
-                // If joint_6 (index 5), invert the position
-                if (i == 5) {
-                    new_position = -new_position;
-                }
-
-                // Update the stored position for the current joint
-                current_positions_[i] = new_position;
-                RCLCPP_INFO(this->get_logger(), "Moving joint_%zu to position: %f", i + 1, new_position);
-            }
-            // Push the current (updated or unchanged) position for each joint
+            // Log the movement
+            RCLCPP_INFO(this->get_logger(), "Moving %s to position: %f", joint_names_[i].c_str(), new_position);
+            
+            // Push the updated position for each joint
             point.positions.push_back(current_positions_[i]);
         }
 
         point.time_from_start = rclcpp::Duration::from_seconds(1.0);
         message.points.push_back(point);
         publisher_->publish(message);
-
-        // Move to the next joint for the next callback
-        joint_index_ = (joint_index_ + 1) % 7;
-        count_ += 1;
     }
 
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory>::SharedPtr publisher_;
     size_t count_;
     size_t joint_index_;  // To keep track of which joint to move
+    std::vector<std::string> joint_names_;  // List of joint names
     std::vector<double> current_positions_;  // Stores the current position of each joint
+
+    // Random number generation
+    std::default_random_engine rng_;
+    std::uniform_real_distribution<double> distribution_;  // Distribution for generating random positions
 };
 
 int main(int argc, char * argv[])
