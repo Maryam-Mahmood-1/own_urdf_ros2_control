@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 
 <robot
-  name="final_7dof_urdf_9oct2024" xmlns:xacro="http://ros.org/wiki/xacro">
+  name="link1_urdf" xmlns:xacro="http://ros.org/wiki/xacro">
 
   <link name="world"/>
 
