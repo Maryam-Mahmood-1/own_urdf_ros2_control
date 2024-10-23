@@ -1,1 +1,1 @@
-prepend-non-duplicate-if-exists;PATH;bin
+/home/maryammahmood/own_urdf_control/build/gazebo_own_urdf/ament_cmake_environment_hooks/path.dsv
