@@ -1,13 +1,3 @@
-controller_manager:
-  ros__parameters:
-    update_rate: 100  # Hz
-
-    joint_trajectory_controller:
-      type: joint_trajectory_controller/JointTrajectoryController
-
-    joint_state_broadcaster:
-      type: joint_state_broadcaster/JointStateBroadcaster
-
 joint_trajectory_controller:
   ros__parameters:
     joints:
@@ -19,3 +9,18 @@ joint_trajectory_controller:
     state_interfaces:
       - position
       - velocity
+
+    # PID parameters
+    pid:
+      joint_1:
+        p: 100.0    # Proportional gain
+        i: 0.0      # Integral gain
+        d: 10.0     # Derivative gain
+        i_max: 1.0  # Maximum integral term
+        i_min: -1.0 # Minimum integral term
+      joint_2:
+        p: 100.0
+        i: 0.0
+        d: 10.0
+        i_max: 1.0
+        i_min: -1.0
