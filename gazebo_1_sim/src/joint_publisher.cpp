@@ -15,7 +15,7 @@ public:
             "/joint_trajectory_controller/joint_trajectory", 10);
         
         // Initialize all joint positions to 0.0
-        current_positions_ = std::vector<double>(7, 0.0);
+        current_positions_ = std::vector<double>(1, 0.0);
 
         timer_ = this->create_wall_timer(
             std::chrono::milliseconds(3000), std::bind(&JointPublisher::timer_callback, this)); 
@@ -28,17 +28,12 @@ private:
 
         // Add names of the 7 joints
         message.joint_names.push_back("joint_1");
-        message.joint_names.push_back("joint_2");
-        message.joint_names.push_back("joint_3");
-        message.joint_names.push_back("joint_4");
-        message.joint_names.push_back("joint_5");
-        message.joint_names.push_back("joint_6");
-        message.joint_names.push_back("joint_7");
+        
 
         auto point = trajectory_msgs::msg::JointTrajectoryPoint();
 
         // Update only the selected joint with its cosine movement, keep others unchanged
-        for (size_t i = 0; i < 7; ++i) {
+        for (size_t i = 0; i < 1; ++i) {
             if (i == joint_index_) {
                 // Calculate the position for the current joint
                 double new_position = 0.66 * (1 - cos(count_ * 0.2 + i * M_PI / 7));
