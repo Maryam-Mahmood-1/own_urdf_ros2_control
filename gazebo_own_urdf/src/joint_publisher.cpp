@@ -20,20 +20,29 @@ private:
     void timer_callback()
     {
         auto message = trajectory_msgs::msg::JointTrajectory();
-        // Add names of the joints you want to control
-        message.joint_names.push_back("arm_upper_to_lower_right");
-        message.joint_names.push_back("arm_upper_to_lower_left");
+        
+        // Add names of the 7 joints
+        message.joint_names.push_back("joint_1");
+        message.joint_names.push_back("joint_2");
+        message.joint_names.push_back("joint_3");
+        message.joint_names.push_back("joint_4");
+        message.joint_names.push_back("joint_5");
+        message.joint_names.push_back("joint_6");
+        message.joint_names.push_back("joint_7");
 
         auto point = trajectory_msgs::msg::JointTrajectoryPoint();
-        double position1 = 1.5*(1-cos(count_*0.1));
-        double position2 = -position1; 
-        point.positions.push_back(position1);
-        point.positions.push_back(position2);
+
+        // Set positions for each joint with a simple alternating pattern
+        for (size_t i = 0; i < 7; ++i) {
+            double position = 0.75 * (1 - cos(count_ * 0.2 + i * M_PI / 7));  // Varying each joint slightly
+            point.positions.push_back(position);
+        }
+
         point.time_from_start = rclcpp::Duration::from_seconds(1.0);
         message.points.push_back(point);
         publisher_->publish(message);
 
-        RCLCPP_INFO(this->get_logger(), "Publishing: '%f', '%f'", position1, position2);
+        RCLCPP_INFO(this->get_logger(), "Publishing positions for 7 joints at count: %zu", count_);
         count_ += 1;
     }
 
