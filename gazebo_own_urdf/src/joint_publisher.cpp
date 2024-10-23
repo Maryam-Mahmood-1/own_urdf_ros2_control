@@ -3,24 +3,29 @@
 #include "trajectory_msgs/msg/joint_trajectory_point.hpp"
 #include <cmath>
 #include <chrono>
+#include <vector>
 
 class JointPublisher : public rclcpp::Node
 {
 public:
     JointPublisher()
-    : Node("joint_publisher"), count_(0)
+    : Node("joint_publisher"), count_(0), joint_index_(0)
     {
         publisher_ = this->create_publisher<trajectory_msgs::msg::JointTrajectory>(
             "/joint_trajectory_controller/joint_trajectory", 10);
+        
+        // Initialize all joint positions to 0.0
+        current_positions_ = std::vector<double>(7, 0.0);
+
         timer_ = this->create_wall_timer(
-            std::chrono::milliseconds(100), std::bind(&JointPublisher::timer_callback, this)); 
+            std::chrono::milliseconds(3000), std::bind(&JointPublisher::timer_callback, this)); 
     }
 
 private:
     void timer_callback()
     {
         auto message = trajectory_msgs::msg::JointTrajectory();
-        
+
         // Add names of the 7 joints
         message.joint_names.push_back("joint_1");
         message.joint_names.push_back("joint_2");
@@ -32,23 +37,39 @@ private:
 
         auto point = trajectory_msgs::msg::JointTrajectoryPoint();
 
-        // Set positions for each joint with a simple alternating pattern
+        // Update only the selected joint with its cosine movement, keep others unchanged
         for (size_t i = 0; i < 7; ++i) {
-            double position = 0.75 * (1 - cos(count_ * 0.2 + i * M_PI / 7));  // Varying each joint slightly
-            point.positions.push_back(position);
+            if (i == joint_index_) {
+                // Calculate the position for the current joint
+                double new_position = 0.66 * (1 - cos(count_ * 0.2 + i * M_PI / 7));
+
+                // If joint_6 (index 5), invert the position
+                if (i == 5) {
+                    new_position = -new_position;
+                }
+
+                // Update the stored position for the current joint
+                current_positions_[i] = new_position;
+                RCLCPP_INFO(this->get_logger(), "Moving joint_%zu to position: %f", i + 1, new_position);
+            }
+            // Push the current (updated or unchanged) position for each joint
+            point.positions.push_back(current_positions_[i]);
         }
 
         point.time_from_start = rclcpp::Duration::from_seconds(1.0);
         message.points.push_back(point);
         publisher_->publish(message);
 
-        RCLCPP_INFO(this->get_logger(), "Publishing positions for 7 joints at count: %zu", count_);
+        // Move to the next joint for the next callback
+        joint_index_ = (joint_index_ + 1) % 7;
         count_ += 1;
     }
 
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<trajectory_msgs::msg::JointTrajectory>::SharedPtr publisher_;
     size_t count_;
+    size_t joint_index_;  // To keep track of which joint to move
+    std::vector<double> current_positions_;  // Stores the current position of each joint
 };
 
 int main(int argc, char * argv[])
