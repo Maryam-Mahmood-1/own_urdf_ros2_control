@@ -1,3 +1,13 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100  # Hz
+
+    joint_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
 joint_trajectory_controller:
   ros__parameters:
     joints:
@@ -11,16 +21,26 @@ joint_trajectory_controller:
       - velocity
 
     # PID parameters
-    pid:
+    gains:
       joint_1:
-        p: 100.0    # Proportional gain
-        i: 0.0      # Integral gain
-        d: 10.0     # Derivative gain
+        p: 1000.0    # Proportional gain
+        i: 0.5      # Integral gain
+        d: 1000.0     # Derivative gain
         i_max: 1.0  # Maximum integral term
         i_min: -1.0 # Minimum integral term
       joint_2:
-        p: 100.0
-        i: 0.0
-        d: 10.0
+        p: 1000.0
+        i: 0.5
+        d: 1000.0
         i_max: 1.0
         i_min: -1.0
+
+    # Additional controller parameters
+    state_publish_rate: 200.0
+    action_monitor_rate: 20.0
+    allow_partial_joints_goal: true
+    open_loop_control: false
+    allow_integration_in_goal_trajectories: true
+    constraints:
+      stopped_velocity_tolerance: 0.05 # Defaults to 0.01
+      goal_time: 1.5 # Defaults to 0.0 (start immediately)

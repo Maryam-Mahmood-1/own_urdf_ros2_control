@@ -107,7 +107,7 @@
       lower="0"
       upper="3.14"
       effort="0"
-      velocity="0" />
+      velocity="3" />
   </joint>
   <link
     name="Link_2">
@@ -165,7 +165,7 @@
       lower="-1.9199"
       upper="1.9199"
       effort="0"
-      velocity="0" />
+      velocity="3" />
   </joint>
   
 
