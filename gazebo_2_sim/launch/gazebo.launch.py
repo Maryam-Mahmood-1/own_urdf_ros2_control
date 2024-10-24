@@ -64,7 +64,7 @@ def generate_launch_description():
         actions=[
             ExecuteProcess(
                 cmd=['ros2', 'control', 'load_controller', '--set-state', 'active',
-                     'position_trajectory_controller'],
+                     'joint_trajectory_controller'],
                 output='screen'
             )
         ]
