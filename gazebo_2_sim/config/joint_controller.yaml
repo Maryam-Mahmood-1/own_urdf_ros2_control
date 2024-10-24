@@ -1,46 +1,49 @@
 controller_manager:
   ros__parameters:
     update_rate: 100  # Hz
+    
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
 
     joint_trajectory_controller:
       type: joint_trajectory_controller/JointTrajectoryController
 
-    joint_state_broadcaster:
-      type: joint_state_broadcaster/JointStateBroadcaster
-
 joint_trajectory_controller:
   ros__parameters:
     joints:
-      - joint_1
-      - joint_2
-    interface_name: position
+      - joint1
+      - joint2
     command_interfaces:
-      - position
+      - velocity
     state_interfaces:
       - position
       - velocity
 
-    # PID parameters
+    # PID gains for each joint (can be adjusted as needed)
     gains:
-      joint_1:
-        p: 1000.0    # Proportional gain
-        i: 0.5      # Integral gain
-        d: 1000.0     # Derivative gain
-        i_max: 1.0  # Maximum integral term
-        i_min: -1.0 # Minimum integral term
-      joint_2:
-        p: 1000.0
-        i: 0.5
-        d: 1000.0
+      joint1:
+        p: 0.1
+        i: 0.01
+        d: 0.001
+        i_max: 1.0
+        i_min: -1.0
+      joint2:
+        p: 0.1
+        i: 0.01
+        d: 0.001
         i_max: 1.0
         i_min: -1.0
 
-    # Additional controller parameters
-    state_publish_rate: 200.0
-    action_monitor_rate: 20.0
-    allow_partial_joints_goal: true
-    open_loop_control: false
-    allow_integration_in_goal_trajectories: true
+
+    # State and action monitoring
+    state_publish_rate: 50.0  # Hz
+    action_monitor_rate: 20.0  # Hz
+
+    # Additional configuration parameters
+    allow_partial_joints_goal: false
+    hardware_state_has_offset: false
+    deduce_states_from_derivatives: false
+
     constraints:
-      stopped_velocity_tolerance: 0.05 # Defaults to 0.01
-      goal_time: 1.5 # Defaults to 0.0 (start immediately)
+      stopped_velocity_tolerance: 0.01
+      allow_nonzero_velocity_at_trajectory_end: true

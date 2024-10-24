@@ -174,7 +174,7 @@
       <plugin>gazebo_ros2_control/GazeboSystem</plugin>
     </hardware>
     <joint name="joint_1">
-      <command_interface name="position">
+      <command_interface name="velocity">
       </command_interface>
       <state_interface name="position">
         <param name="initial_value">0</param>

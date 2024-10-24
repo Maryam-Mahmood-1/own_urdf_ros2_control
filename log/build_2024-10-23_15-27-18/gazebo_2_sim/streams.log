@@ -1,0 +1,69 @@
+[0.011s] Invoking command in '/home/maryammahmood/own_urdf_control/build/gazebo_2_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maryammahmood/ws_moveit2/install/moveit_configs_utils:/home/maryammahmood/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /home/maryammahmood/own_urdf_control/gazebo_2_sim -DCMAKE_INSTALL_PREFIX=/home/maryammahmood/own_urdf_control/install/gazebo_2_sim
+[0.022s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.115s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.119s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.139s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.141s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.145s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.153s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.162s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.185s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.187s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.284s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.315s] -- Found trajectory_msgs: 4.2.4 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[0.336s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.387s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.387s] -- Configured cppcheck include dirs: 
+[0.387s] -- Configured cppcheck exclude dirs and/or files: 
+[0.388s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.388s] -- Added test 'lint_cmake' to check CMake code style
+[0.389s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.390s] -- Added test 'uncrustify' to check C / C++ code style
+[0.390s] -- Configured uncrustify additional arguments: 
+[0.390s] -- Added test 'xmllint' to check XML markup files
+[0.391s] -- Configuring done
+[0.396s] -- Generating done
+[0.397s] -- Build files have been written to: /home/maryammahmood/own_urdf_control/build/gazebo_2_sim
+[0.403s] Invoked command in '/home/maryammahmood/own_urdf_control/build/gazebo_2_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maryammahmood/ws_moveit2/install/moveit_configs_utils:/home/maryammahmood/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake /home/maryammahmood/own_urdf_control/gazebo_2_sim -DCMAKE_INSTALL_PREFIX=/home/maryammahmood/own_urdf_control/install/gazebo_2_sim
+[0.404s] Invoking command in '/home/maryammahmood/own_urdf_control/build/gazebo_2_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maryammahmood/ws_moveit2/install/moveit_configs_utils:/home/maryammahmood/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/maryammahmood/own_urdf_control/build/gazebo_2_sim -- -j24 -l24
+[0.466s] [35m[1mConsolidate compiler generated dependencies of target joint_publisher[0m
+[0.494s] [100%] Built target joint_publisher
+[0.509s] Invoked command in '/home/maryammahmood/own_urdf_control/build/gazebo_2_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maryammahmood/ws_moveit2/install/moveit_configs_utils:/home/maryammahmood/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --build /home/maryammahmood/own_urdf_control/build/gazebo_2_sim -- -j24 -l24
+[0.554s] Invoking command in '/home/maryammahmood/own_urdf_control/build/gazebo_2_sim': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maryammahmood/ws_moveit2/install/moveit_configs_utils:/home/maryammahmood/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/maryammahmood/own_urdf_control/build/gazebo_2_sim
+[0.565s] -- Install configuration: ""
+[0.566s] -- Execute custom install script
+[0.566s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/lib/gazebo_2_sim/joint_publisher
+[0.566s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/launch/gazebo.launch.py
+[0.566s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/urdf/link2_urdf.urdf.xacro
+[0.566s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/config/joint_controller.yaml
+[0.567s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/Link_1.STL
+[0.567s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/Link_2.STL
+[0.567s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/Link_3.STL
+[0.567s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/Link_4.STL
+[0.567s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/Link_5.STL
+[0.567s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/Link_7.STL
+[0.567s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/base_claw_link1.STL
+[0.567s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/base_claw_link2.STL
+[0.567s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/base_link.STL
+[0.567s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/endeffector.STL
+[0.567s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/gear1.STL
+[0.567s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/gear1_claw.STL
+[0.567s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/gear2_claw.STL
+[0.567s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/gear2_link.STL
+[0.567s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/meshes/link_6.STL
+[0.567s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/ament_index/resource_index/package_run_dependencies/gazebo_2_sim
+[0.567s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/ament_index/resource_index/parent_prefix_path/gazebo_2_sim
+[0.568s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/environment/ament_prefix_path.sh
+[0.568s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/environment/ament_prefix_path.dsv
+[0.568s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/environment/path.sh
+[0.568s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/environment/path.dsv
+[0.568s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/local_setup.bash
+[0.568s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/local_setup.sh
+[0.568s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/local_setup.zsh
+[0.568s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/local_setup.dsv
+[0.568s] -- Symlinking: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/package.dsv
+[0.576s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/ament_index/resource_index/packages/gazebo_2_sim
+[0.576s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/cmake/gazebo_2_simConfig.cmake
+[0.576s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/cmake/gazebo_2_simConfig-version.cmake
+[0.576s] -- Up-to-date symlink: /home/maryammahmood/own_urdf_control/install/gazebo_2_sim/share/gazebo_2_sim/package.xml
+[0.578s] Invoked command in '/home/maryammahmood/own_urdf_control/build/gazebo_2_sim' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/maryammahmood/ws_moveit2/install/moveit_configs_utils:/home/maryammahmood/ws_moveit2/install/launch_param_builder:/opt/ros/humble /usr/bin/cmake --install /home/maryammahmood/own_urdf_control/build/gazebo_2_sim
