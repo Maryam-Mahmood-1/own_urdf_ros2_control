@@ -1,0 +1,10 @@
+/home/maryammahmood/own_urdf_control/build/gazebo_2_sim_pid/CMakeFiles/uninstall.dir
+/home/maryammahmood/own_urdf_control/build/gazebo_2_sim_pid/CMakeFiles/gazebo_2_sim_pid_uninstall.dir
+/home/maryammahmood/own_urdf_control/build/gazebo_2_sim_pid/CMakeFiles/joint_publisher.dir
+/home/maryammahmood/own_urdf_control/build/gazebo_2_sim_pid/CMakeFiles/test.dir
+/home/maryammahmood/own_urdf_control/build/gazebo_2_sim_pid/CMakeFiles/edit_cache.dir
+/home/maryammahmood/own_urdf_control/build/gazebo_2_sim_pid/CMakeFiles/rebuild_cache.dir
+/home/maryammahmood/own_urdf_control/build/gazebo_2_sim_pid/CMakeFiles/list_install_components.dir
+/home/maryammahmood/own_urdf_control/build/gazebo_2_sim_pid/CMakeFiles/install.dir
+/home/maryammahmood/own_urdf_control/build/gazebo_2_sim_pid/CMakeFiles/install/local.dir
+/home/maryammahmood/own_urdf_control/build/gazebo_2_sim_pid/CMakeFiles/install/strip.dir

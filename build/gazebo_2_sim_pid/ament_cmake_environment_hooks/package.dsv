@@ -1,0 +1,4 @@
+source;share/gazebo_2_sim_pid/local_setup.bash
+source;share/gazebo_2_sim_pid/local_setup.dsv
+source;share/gazebo_2_sim_pid/local_setup.sh
+source;share/gazebo_2_sim_pid/local_setup.zsh
